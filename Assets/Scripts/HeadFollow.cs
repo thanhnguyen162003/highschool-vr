@@ -24,7 +24,7 @@ public class HeadFollow : MonoBehaviour
 	private void UpdateTransform()
 	{
 		Vector3 targetPos = head.TransformPoint(offset);
-		Quaternion targetRot = Quaternion.Euler(new Vector3(0, head.eulerAngles.y, 0));
+		Quaternion targetRot = Quaternion.Euler(new Vector3(30, head.eulerAngles.y, 0));
 
 		transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * smoothAmount);
 		transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * smoothAmount);
