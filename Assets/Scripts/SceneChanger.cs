@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void ChangeScene(string sceneName)
+    // This method will be called when the button is clicked
+    public void LoadScene(string sceneToLoad)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

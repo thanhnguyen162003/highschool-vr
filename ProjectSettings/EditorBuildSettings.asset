@@ -8,6 +8,57 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SanhTrong.unity
     guid: 03ccd1666d3cca04daea5aa5d27f9dab
+  - enabled: 1
+    path: Assets/Scenes/AoSen.unity
+    guid: fb349951e4f08ff40b09a69b5055ac11
+  - enabled: 1
+    path: Assets/Scenes/Hall.unity
+    guid: cd1999a47127c1c47adb638d11a02fe5
+  - enabled: 1
+    path: Assets/Scenes/HanhLang.unity
+    guid: 7de06f105f197394dbc8d1b70420f27f
+  - enabled: 1
+    path: Assets/Scenes/NhacCuDanToc.unity
+    guid: 4aebada5e90accf45ba76e94e01d7475
+  - enabled: 1
+    path: Assets/Scenes/PhongHoc.unity
+    guid: 44e039c25d877064a8f4c10af8f96603
+  - enabled: 1
+    path: Assets/Scenes/PhongLichSu.unity
+    guid: 1bcf64555af01524e9ab0ca0b8d1e983
+  - enabled: 1
+    path: Assets/Scenes/PhongMyThuat.unity
+    guid: 7488b5dbc166d694fbfb47262fc32660
+  - enabled: 1
+    path: Assets/Scenes/PhongTrungBay.unity
+    guid: 48fe22050308ab5449c5aac8ffdf0344
+  - enabled: 1
+    path: Assets/Scenes/PhongTrungBay2.unity
+    guid: 8aed170f1bb74fe47bee6e3faf1c9ba8
+  - enabled: 1
+    path: Assets/Scenes/HoiTruong.unity
+    guid: 7a8d55dc73aa03e4b808a4de0b223dd2
+  - enabled: 1
+    path: Assets/Scenes/OrangeBar.unity
+    guid: 74ab1c29284e76b4fa19d70bc245d76e
+  - enabled: 1
+    path: Assets/Scenes/PhongCLBNhac.unity
+    guid: 5d6aa89acdac84a4cbbb37a043f98dc7
+  - enabled: 1
+    path: Assets/Scenes/PhongHop.unity
+    guid: 4581175786c679f41b27c1a55a982d87
+  - enabled: 1
+    path: Assets/Scenes/SanhVo.unity
+    guid: 013bcbaa228186149b363af6d0af191c
+  - enabled: 1
+    path: Assets/Scenes/SanhVo2.unity
+    guid: 7866caa1d9f1ad04a937d43711a52a8b
+  - enabled: 1
+    path: Assets/Scenes/SanTruong.unity
+    guid: 32e56f8bd7f099b4992999de1a1144a5
+  - enabled: 1
+    path: Assets/Scenes/ThuVien.unity
+    guid: d34e951b0d1f13248bee6ca3ced20e90
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 39bc456f5299a824d8bde223f89a4730, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
