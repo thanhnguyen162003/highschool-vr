@@ -13,7 +13,6 @@ public class ToggleCanvasOnButtonClick : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
-            Debug.Log("active" + targetCanvas.gameObject.activeSelf);
             targetCanvas.SetActive(!targetCanvas.gameObject.activeSelf);
 
         }
