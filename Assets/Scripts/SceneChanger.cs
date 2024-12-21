@@ -7,6 +7,10 @@ public class SceneChanger : MonoBehaviour
     // This method will be called when the button is clicked
     public void LoadScene(string sceneToLoad)
     {
-        SceneManager.LoadScene(sceneToLoad);
+        if (SceneManager.GetActiveScene().name != sceneToLoad)
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
+        
     }
 }

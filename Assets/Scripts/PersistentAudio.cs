@@ -24,7 +24,7 @@ public class PersistentAudio : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         AudioSource audioSource = GetComponent<AudioSource>();
-        if (audioSource != null && clip != null)
+        if (audioSource != null && clip != null && audioSource.isPlaying == false)
         {
             audioSource.clip = clip;
             audioSource.Play();
@@ -34,11 +34,11 @@ public class PersistentAudio : MonoBehaviour
             Debug.LogError("AudioSource or AudioClip is missing!");
         }
     }
-
+   
     public void StopSound()
     {
         AudioSource audioSource = GetComponent<AudioSource>();
-        if (audioSource != null)
+        if (audioSource != null && audioSource.isPlaying == true)
         {
             audioSource.Stop();
         }
