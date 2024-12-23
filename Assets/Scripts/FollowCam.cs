@@ -1,26 +1,32 @@
 using UnityEngine;
 
-public class HeadInfront : MonoBehaviour
+public class FollowCam : MonoBehaviour
 {
     [SerializeField] private Vector3 offset;
-	[SerializeField] private float smoothAmount = 1;
+    [SerializeField] private float smoothAmount = 1;
+    public Vector3 rotationOffset;
+    private Transform head;
+    private bool isPaused = false;
 
-	private Transform head;
-	private bool isPaused = false;
-
-	void Start()
-	{
-		head = Camera.main.transform;
+    void Start()
+    {
+        head = Camera.main.transform;
         UpdateTransform();
     }
-	private void OnEnable()
-	{
-		head = Camera.main.transform;
-		UpdateTransform();
-	}
 
-	private void UpdateTransform()
-	{
+    private void OnEnable()
+    {
+        head = Camera.main.transform;
+        UpdateTransform();
+    }
+
+    void Update()
+    {
+        if (!isPaused) UpdateTransform();
+    }
+
+    private void UpdateTransform()
+    {
         //Vector3 targetPos = head.TransformPoint(offset);
         //Quaternion targetRot = Quaternion.Euler(new Vector3(30, head.eulerAngles.y, 0));
 
@@ -32,12 +38,12 @@ public class HeadInfront : MonoBehaviour
         Quaternion targetRot = head.rotation; // Directly use the camera's rotation
 
         transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * smoothAmount);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * smoothAmount);
+        transform.rotation = head.rotation * Quaternion.Euler(rotationOffset); // Apply rotation offset
     }
 
-	public void Pause() => isPaused = true;
+    public void Pause() => isPaused = true;
 
-	public void Resume() => isPaused = false;
+    public void Resume() => isPaused = false;
 
-	public void DestroyScript() => Destroy(this);
+    public void DestroyScript() => Destroy(this);
 }
