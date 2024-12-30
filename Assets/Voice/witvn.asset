@@ -32,11 +32,11 @@ MonoBehaviour:
     name: highschoolvnforvn
     id: 2039621636534855
     lang: vi
-    isPrivate: 0
+    isPrivate: 1
     createdAt: 2024-12-23T00:54:49-0800
-    trainingStatus: 3
-    lastTrainDuration: 0
-    lastTrainedAt: 1969-12-31T16:00:00-0800
+    trainingStatus: 1
+    lastTrainDuration: 81
+    lastTrainedAt: 2024-12-23T00:58:03-0800
     nextTrainAt: 2024-12-23T00:56:42-0800
     intents:
     - id: 1103467097674469
@@ -586,9 +586,7 @@ MonoBehaviour:
     _converse: 
   isDemoOnly: 0
   useIntentAttributes: 1
-  useConduit: 1
+  useConduit: 0
   _manifestLocalPath: ConduitManifest-120279d2-8c05-426a-a1ec-243fa4414986.json
-  excludedAssemblies:
-  - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  excludedAssemblies: []
   relaxedResolution: 0

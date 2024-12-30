@@ -207,7 +207,7 @@ MonoBehaviour:
       inputType: text_default
   usePlatformServices: 0
   doNotFallbackToWit: 0
-  enableConsoleLogging: 0
+  enableConsoleLogging: 1
 --- !u!114 &2110211756597282983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,3 +221,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dictation: {fileID: 6472426906865616957}
+  myText: {fileID: 0}
+  inputFieldTMP: {fileID: 0}

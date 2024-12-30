@@ -22,6 +22,7 @@ using Meta.WitAi.Dictation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Meta.Voice.Samples.Dictation
 {
@@ -30,23 +31,54 @@ namespace Meta.Voice.Samples.Dictation
         [FormerlySerializedAs("dictation")]
         [SerializeField] private DictationService _dictation;
         public TMP_Text myText;
+        public TMP_InputField inputFieldTMP; // Assign your Input Field (TextMeshPro)
 
-        private void Update()
+        public void PushAndHold()
         {
-            if (_dictation.MicActive)
-            {
-                myText.text = "Bạn đang nói";
-            }
-            else
-            {
-                myText.text = "Đang không nói";
-            }
+            _dictation.Activate();
+            myText.text = "Bạn đang nói";
+            Debug.Log("Input Started");
         }
+
+        public void Release()
+        {
+            _dictation.Deactivate();
+            myText.text = "Đang không nói";
+            EndEditing();
+        }
+
+        void EndEditing()
+        {
+            if (inputFieldTMP != null)
+            {
+                // Deselect the input field (TextMeshPro)
+                inputFieldTMP.DeactivateInputField();
+                // Or you can use this to force the text to be committed.
+                inputFieldTMP.onEndEdit.Invoke(inputFieldTMP.text);
+                
+            }
+            Debug.Log(inputFieldTMP.text);
+            // Optionally, you can perform other actions here, like:
+            // - Saving the input text
+            // - Displaying a message
+            // - Disabling the button
+            // endEditButton.interactable = false;
+            Debug.Log("Input Ended");
+        }
+
         public void ToggleActivation()
         {
             if (_dictation.MicActive)
             {
                 _dictation.Deactivate();
+                if (inputFieldTMP != null)
+                {
+                    // Deselect the input field (TextMeshPro)
+                    inputFieldTMP.DeactivateInputField();
+                    // Or you can use this to force the text to be committed.
+                    inputFieldTMP.onEndEdit.Invoke(inputFieldTMP.text);
+                }
+                
             }
             else
             {

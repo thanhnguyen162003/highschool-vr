@@ -1,0 +1,23 @@
+# ninja log v5
+8	1145	7572509233581931	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c82d59a7f580be6f
+39	416	7572509226339225	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	eb6d0ed1a1feaf26
+13	1093	7572509233105158	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c9dc7d3df2a04480
+417	598	7572509228125704	E:/capstone/sep/highschool-vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6ca1f333/obj/arm64-v8a/libswappywrapper.so	874e14568d3f40e
+33	982	7572509232004855	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ec24239498cf5386
+4	940	7572509231564395	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	d422ce4e1da6b470
+18	951	7572509231677813	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	8b4f8996900229ac
+23	970	7572509231852167	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	12ee16ddc74797a4
+0	1029	7572509232310759	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a7b88a3c9b13860b
+27	973	7572509231883114	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1401ad8c7796dedb
+1145	1227	7572509234454907	E:/capstone/sep/highschool-vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6ca1f333/obj/arm64-v8a/libgame.so	61cd65f238261fd7
+64	913	7572515242641020	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	eb6d0ed1a1feaf26
+20	937	7572515242681278	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	8b4f8996900229ac
+6	938	7572515242691276	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	12ee16ddc74797a4
+15	947	7572515242691276	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a7b88a3c9b13860b
+10	950	7572515242691276	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	d422ce4e1da6b470
+45	951	7572515242706334	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1401ad8c7796dedb
+26	953	7572515242706334	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ec24239498cf5386
+2	954	7572515242771927	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c82d59a7f580be6f
+31	957	7572515242756795	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c9dc7d3df2a04480
+914	1032	7572515243978126	E:/capstone/sep/highschool-vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6ca1f333/obj/arm64-v8a/libswappywrapper.so	874e14568d3f40e
+957	1051	7572515244123825	E:/capstone/sep/highschool-vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/6ca1f333/obj/arm64-v8a/libgame.so	61cd65f238261fd7
