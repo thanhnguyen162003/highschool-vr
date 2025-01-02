@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 2800000, guid: d3b5ac4c8b01ef14a8a66d7e2a4991cc, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1127313559110322462
 Transform:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     customTranscriptionProvider: {fileID: 0}
     alwaysRecord: 0
     preferredActivationOffset: -0.5
-    transcribeOnly: 0
+    transcribeOnly: 1
     pubSubSettings:
       PubSubTopicId: 
       PublishOptions:
@@ -202,10 +202,10 @@ MonoBehaviour:
         transcriptionResponses: 1
         composerResponses: 1
     dictationConfiguration:
-      multiPhrase: 0
+      multiPhrase: 1
       scenario: default
       inputType: text_default
-  usePlatformServices: 0
+  usePlatformServices: 1
   doNotFallbackToWit: 0
   enableConsoleLogging: 1
 --- !u!114 &2110211756597282983

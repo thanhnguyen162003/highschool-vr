@@ -979,7 +979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1726880868991948519
 Transform:
   m_ObjectHideFlags: 0
@@ -3649,6 +3649,7 @@ GameObject:
   - component: {fileID: 6241603207718106452}
   - component: {fileID: 1329618970636104243}
   - component: {fileID: 5017578829206787139}
+  - component: {fileID: 8706480586780300312}
   m_Layer: 0
   m_Name: robotSphere
   m_TagString: Untagged
@@ -3664,9 +3665,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7378511175656687532}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.98958683, z: -0, w: 0.1439373}
+  m_LocalRotation: {x: 0, y: 0.98958623, z: 0, w: 0.14394176}
   m_LocalPosition: {x: -3.02, y: -1.22, z: 7.57}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1726880868991948519}
@@ -3713,9 +3714,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7378511175656687532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e4b5d1332c3a6f4ebb61476a3f1f0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0.45, y: -0.5, z: 0.9}
+  smoothAmount: 5
+  rotationOffset: {x: 0, y: 190, z: 0}
+--- !u!114 &8706480586780300312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7378511175656687532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf26cfb475b8e645991442d842646c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0.45, y: -0.5, z: 0.9}
